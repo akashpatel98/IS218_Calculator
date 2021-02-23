@@ -2,6 +2,11 @@ from Operations.addition import addition
 from Operations.multiplication import multiplication
 from Operations.square import square
 from Operations.subtraction import subtraction
+from Operations.division import division
+from Operations.squar_eroot import square_root
+
+
+
 
 
 class Calculator:
@@ -19,7 +24,7 @@ class Calculator:
         return self.result
 
     def divide(self, a, b):
-        self.result = dividedation(a, b)
+        self.result = division(a, b)
         return self.result
 
     def subtract(self, a, b):
@@ -30,6 +35,6 @@ class Calculator:
         self.result = square(a)
         return self.result
 
-    def squarerooting(self, a):
-        self.result = squareroot(a)
+    def squareroot(self, a):
+        self.result = square_root(a)
         return self.result

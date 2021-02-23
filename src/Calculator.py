@@ -6,9 +6,6 @@ from Operations.division import division
 from Operations.squar_eroot import square_root
 
 
-
-
-
 class Calculator:
     result = 0
 

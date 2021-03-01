@@ -3,7 +3,7 @@ from Operations.multiplication import multiplication
 from Operations.square import square
 from Operations.subtraction import subtraction
 from Operations.division import division
-from Operations.squar_eroot import square_root
+from Operations.square_root import square_root
 
 
 class Calculator:

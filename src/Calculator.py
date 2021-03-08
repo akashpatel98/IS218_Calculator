@@ -1,9 +1,8 @@
 from Operations.addition import addition
-from Operations.multiplication import multiplication
-from Operations.square import square
-from Operations.subtraction import subtraction
 from Operations.division import division
+from Operations.multiplication import multiplication
 from Operations.square_root import square_root
+from Operations.subtraction import subtraction
 
 
 def add(a, b):
@@ -30,14 +29,14 @@ def divide(a, b):
 def subtract(a, b):
     a = int(a)
     b = int(b)
-    c = a - b
+    c = b - a
     return c
 
 
-def square(a, b):
+def square_root(a, b):
     a = int(a)
     b = int(b)
-    c = a ** b
+    c = a ** 2
     return c
 
 
@@ -64,7 +63,7 @@ class Calculator:
         return self.result
 
     def square(self, a):
-        self.result = square(a)
+        self.result = square_root(a, )
         return self.result
 
     def squareroot(self, a):

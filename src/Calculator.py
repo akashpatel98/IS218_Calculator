@@ -6,6 +6,41 @@ from Operations.division import division
 from Operations.square_root import square_root
 
 
+def add(a, b):
+    a = int(a)
+    b = int(b)
+    c = a + b
+    return c
+
+
+def multiply(a, b):
+    a = int(a)
+    b = int(b)
+    c = a * b
+    return c
+
+
+def divide(a, b):
+    a = int(a)
+    b = int(b)
+    c = a / b
+    return c
+
+
+def subtract(a, b):
+    a = int(a)
+    b = int(b)
+    c = a - b
+    return c
+
+
+def square(a, b):
+    a = int(a)
+    b = int(b)
+    c = a ** b
+    return c
+
+
 class Calculator:
     result = 0
 
@@ -28,7 +63,7 @@ class Calculator:
         self.result = subtraction(a, b)
         return self.result
 
-    def squaring(self, a):
+    def square(self, a):
         self.result = square(a)
         return self.result
 

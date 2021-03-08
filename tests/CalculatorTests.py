@@ -16,37 +16,37 @@ class MyTestCase(unittest.TestCase):
         self.assertIsInstance(self.calculator.result, 0)
 
     def test_subtraction(self):
-        testData = CsvReader('/tests/CSV_files/subtraction.csv').data
+        test_data = CsvReader('/tests/CSV_files/subtraction.csv').data
         for row in test_data:
             self.assertEqual(self.calculator.subtract(row['Value 2'], row['Value 1']), int(row['Result']))
             self.assertEqual(self.calculator.result, int(row['Result']))
 
     def test_addition(self):
-        testData = CsvReader('/tests/CSV_files/addition.csv').data
+        test_data = CsvReader('/tests/CSV_files/addition.csv').data
         for row in test_data:
             self.assertEqual(self.calculator.subtract(row['Value 1'], row['Value 2']), int(row['Result']))
             self.assertEqual(self.calculator.result, int(row['Result']))
 
     def test_multiplication(self):
-        testData = CsvReader('/tests/CSV_files/subtraction.csv').data
+        test_data = CsvReader('/tests/CSV_files/subtraction.csv').data
         for row in test_data:
             self.assertEqual(self.calculator.subtract(row['Value 1'], row['Value 2']), int(row['Result']))
             self.assertEqual(self.calculator.result, int(row['Result']))
 
     def test_division(self):
-        testData = CsvReader('/tests/CSV_files/division.csv').data
+        test_data = CsvReader('/tests/CSV_files/division.csv').data
         for row in test_data:
             self.assertEqual(self.calculator.subtract(row['Value 2'], row['Value 1']), int(row['Result']))
             self.assertEqual(self.calculator.result, int(row['Result']))
 
     def test_square(self):
-        testData = CsvReader('/tests/CSV_files/square.csv').data
+        test_data = CsvReader('/tests/CSV_files/square.csv').data
         for row in test_data:
             self.assertEqual(self.calculator.subtract(row['Value 1'], row['Value 2']), int(row['Result']))
             self.assertEqual(self.calculator.result, int(row['Result']))
 
     def test_square_root(self):
-        testData = CsvReader('/tests/CSV_files/square_root.csv').data
+        test_data = CsvReader('/tests/CSV_files/square_root.csv').data
         for row in test_data:
             self.assertEqual(self.calculator.subtract(row['Value 1'], row['Value 2']), int(row['Result']))
             self.assertEqual(self.calculator.result, int(row['Result']))
